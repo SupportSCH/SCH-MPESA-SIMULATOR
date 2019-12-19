@@ -26,12 +26,12 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-3 text-center mt-3 mb-3">
-                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus1 == 1" (click)="onClick(1, 0)">Disable SAP Fi Posting</button>
-                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus1 == 0" (click)="onClick(1, 1)">Enable SAP Fi Posting</button>
+                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus1 == 1" (click)="onClick(1, 0)">Disable SAP Fi Post</button>
+                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus1 == 0" (click)="onClick(1, 1)">Enable SAP Fi Post</button>
                             </div>
                         <div class="col-md-3 text-center mt-3 mb-3">
-                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus2 == 1" (click)="onClick(2, 0)">Disable SAP Master Data Sync</button>
-                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus2 == 0" (click)="onClick(2, 1)">Enable SAP Master Data Sync</button>
+                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus2 == 1" (click)="onClick(2, 0)">Disable SAP Master  </button>
+                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus2 == 0" (click)="onClick(2, 1)">Enable SAP Master  </button>
                         </div>
                         <div class="col-md-3 text-center mt-3 mb-3">
                             <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus3 == 1" (click)="onClick(3, 0)">Disable Archive DB</button>
