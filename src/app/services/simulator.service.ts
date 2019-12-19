@@ -40,7 +40,10 @@ export class SimulatorService {
   processControl(){
     this.simulatorApiService.processControlAPI()
     .subscribe((response: any) => {
-      this.simulatorApiService.statusCode = response.ResultCode;
+      this.simulatorApiService.ProcessStatus1 = response.Data[0].Active;
+      this.simulatorApiService.ProcessStatus2 = response.Data[1].Active;
+      this.simulatorApiService.ProcessStatus3 = response.Data[2].Active;
+      this.simulatorApiService.ProcessStatus4 = response.Data[3].Active;
     })
   }
 }

@@ -18,8 +18,10 @@ export class SimulatorComponent implements OnInit {
     this.simulatorService.login();
   }
 
-  onClick(clickedID){
-    alert(clickedID)
+  onClick(clickedID, statusCode){
+    this.simulatorApiService.ID = clickedID;
+    this.simulatorApiService.statusCode = statusCode;
+    this.simulatorService.processControl();
   }
 
 }

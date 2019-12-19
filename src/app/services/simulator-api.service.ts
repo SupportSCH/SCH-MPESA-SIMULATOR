@@ -8,7 +8,12 @@ export class SimulatorApiService {
 
   access_token: any;
   responseArray: any = [];
-  statusCode: any = 0;
+  ProcessStatus1: any = 1;
+  ProcessStatus2: any = 1;
+  ProcessStatus3: any = 1;
+  ProcessStatus4: any = 1;
+  ID: any;
+  statusCode: any;
 
   constructor(private http: HttpClient) { }
 
@@ -51,8 +56,8 @@ export class SimulatorApiService {
 
   processControlAPI() {
     let data = {
-      "ID": "1",
-      "status": "0"
+      "ID": this.ID,
+      "status": this.statusCode
     }
     const headerDict = {
       "Content-Type": "application/json",
