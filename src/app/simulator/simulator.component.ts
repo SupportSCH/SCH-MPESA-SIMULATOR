@@ -9,7 +9,7 @@ import { SimulatorApiService } from '../services/simulator-api.service';
 })
 export class SimulatorComponent implements OnInit {
 
-  constructor(private simulatorService: SimulatorService, private simulatorApiService: SimulatorApiService) { }
+  constructor(public simulatorService: SimulatorService, public simulatorApiService: SimulatorApiService) { }
 
   ngOnInit() {
     this.simulatorService.processControl();
