@@ -8,12 +8,12 @@ export class SimulatorApiService {
 
   access_token: any;
   responseArray: any = [];
-  ProcessStatus1: any = 1;
-  ProcessStatus2: any = 1;
-  ProcessStatus3: any = 1;
-  ProcessStatus4: any = 1;
-  ID: any;
-  statusCode: any;
+  ProcessStatus1: any;
+  ProcessStatus2: any;
+  ProcessStatus3: any;
+  ProcessStatus4: any;
+  ID: any = 1;
+  statusCode: any = 1;
 
   constructor(private http: HttpClient) { }
 

@@ -12,6 +12,7 @@ export class SimulatorComponent implements OnInit {
   constructor(private simulatorService: SimulatorService, private simulatorApiService: SimulatorApiService) { }
 
   ngOnInit() {
+    this.simulatorService.processControl();
   }
 
   onSimulate(){

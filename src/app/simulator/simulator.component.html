@@ -16,8 +16,8 @@
     </div>
 
     <div class="row simulateCard">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
+        <!-- <div class="col-md-1"></div> -->
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
                     <div class="text-primary text-capitalize text-center" style="font-size: 18px; font-weight: bold;">
@@ -25,26 +25,26 @@
                 </div>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col-md-3 text-center">
-                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus1 == 1" (click)="onClick(1, 0)">Disable Process 1</button>
-                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus1 == 0" (click)="onClick(1, 1)">Enable Process 1</button>
+                        <div class="col-md-3 text-center mt-3 mb-3">
+                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus1 == 1" (click)="onClick(1, 0)">Disable SAP Fi Posting</button>
+                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus1 == 0" (click)="onClick(1, 1)">Enable SAP Fi Posting</button>
                             </div>
-                        <div class="col-md-3 text-center">
-                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus2 == 1" (click)="onClick(2, 0)">Disable Process 2</button>
-                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus2 == 0" (click)="onClick(2, 1)">Enable Process 2</button>
+                        <div class="col-md-3 text-center mt-3 mb-3">
+                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus2 == 1" (click)="onClick(2, 0)">Disable SAP Master Data Sync</button>
+                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus2 == 0" (click)="onClick(2, 1)">Enable SAP Master Data Sync</button>
                         </div>
-                        <div class="col-md-3 text-center">
-                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus3 == 1" (click)="onClick(3, 0)">Disable Process 3</button>
-                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus3 == 0" (click)="onClick(3, 1)">Enable Process 3</button>
+                        <div class="col-md-3 text-center mt-3 mb-3">
+                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus3 == 1" (click)="onClick(3, 0)">Disable Archive DB</button>
+                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus3 == 0" (click)="onClick(3, 1)">Enable Archive DB</button>
                         </div>
-                        <div class="col-md-3 text-center">
-                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus4 == 1" (click)="onClick(4, 0)">Disable Process 4</button>
-                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus4 == 0" (click)="onClick(4, 1)">Enable Process 4</button>
+                        <div class="col-md-3 text-center mt-3 mb-3">
+                            <button type="button" class="btn btn-danger" *ngIf="simulatorApiService.ProcessStatus4 == 1" (click)="onClick(4, 0)">Disable SMS Retries</button>
+                            <button type="button" class="btn btn-success" *ngIf="simulatorApiService.ProcessStatus4 == 0" (click)="onClick(4, 1)">Enable SMS Retries</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-1"></div>
+        <!-- <div class="col-md-1"></div> -->
     </div>
 </div>
