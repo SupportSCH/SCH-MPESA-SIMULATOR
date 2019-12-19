@@ -8,6 +8,7 @@ export class SimulatorApiService {
 
   access_token: any;
   responseArray: any = [];
+  statusCode: any = 0;
 
   constructor(private http: HttpClient) { }
 
@@ -38,13 +39,29 @@ export class SimulatorApiService {
     const httpOptions = {
       headers: new HttpHeaders({
         "Content-Type": "application/json",
-        "Authorization": "Bearer a0TzMQyfuzv8A7krwMoN1yzwxKAq",
-        // 'Authorization': 'Bearer ' + this.access_token
+        // "Authorization": "Bearer a0TzMQyfuzv8A7krwMoN1yzwxKAq",
+        'Authorization': 'Bearer ' + this.access_token
       })
     };
     console.log("simulators",this.access_token);
     
     return this.http.post('https://sandbox.safaricom.co.ke/mpesa/c2b/v1/simulate', data, httpOptions);
+  }
+
+
+  processControlAPI() {
+    let data = {
+      "ID": "1",
+      "status": "0"
+    }
+    const headerDict = {
+      "Content-Type": "application/json",
+    };
+
+    const requestOptions = {
+      headers: new HttpHeaders(headerDict),
+    };
+    return this.http.post('https://nssf.supplychainh.com/api/nssf/update-batch-job-status', data, requestOptions)
   }
 }
 

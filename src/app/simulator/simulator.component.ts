@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SimulatorService } from '../services/simulator.service';
+import { SimulatorApiService } from '../services/simulator-api.service';
 
 @Component({
   selector: 'app-simulator',
@@ -8,13 +9,17 @@ import { SimulatorService } from '../services/simulator.service';
 })
 export class SimulatorComponent implements OnInit {
 
-  constructor(private simulatorService: SimulatorService) { }
+  constructor(private simulatorService: SimulatorService, private simulatorApiService: SimulatorApiService) { }
 
   ngOnInit() {
   }
 
   onSimulate(){
     this.simulatorService.login();
+  }
+
+  onClick(clickedID){
+    alert(clickedID)
   }
 
 }

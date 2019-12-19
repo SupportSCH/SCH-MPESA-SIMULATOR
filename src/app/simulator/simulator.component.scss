@@ -1,12 +1,28 @@
+// @import '~bootstrap/dist/css/bootstrap.min.css';
+
+
+
 .logo {
     height: 100px;
 }
 
 .container {
-    font-family: "Open Sans", "Helvetica Neue", "Segoe UI", "Calibri", "Arial",
+    font-family: "Open Sans", "Helvetica Neue", "Segoe UI", "Calibri", "Arial" !important;
+    // font-family: sans-serif;
 }
 
 .simulate {
     margin-top: 64px;
     font-size: 20px;
 }
+
+.simulateCard {
+    margin-top: 64px;
+    font-size: 20px;
+}
+
+.card {
+    -webkit-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 12px 0px rgba(0, 0, 0, 0.3);
+  }

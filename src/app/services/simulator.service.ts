@@ -36,4 +36,11 @@ export class SimulatorService {
         }
       })
   }
+
+  processControl(){
+    this.simulatorApiService.processControlAPI()
+    .subscribe((response: any) => {
+      this.simulatorApiService.statusCode = response.ResultCode;
+    })
+  }
 }
